@@ -1,0 +1,13 @@
+version: '3.6'
+
+services:
+  web:
+    image: ave-mairie-ia:web-dev
+    build:
+      context: apps/web
+      target: dev
+    ports:
+      - 5173:5173
+    volumes:
+      - ./apps/web:/app
+    restart: always
