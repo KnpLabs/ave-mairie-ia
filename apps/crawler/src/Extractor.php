@@ -5,17 +5,16 @@ namespace App;
 use League\HTMLToMarkdown\HtmlConverter;
 use Psr\Http\Message\StreamInterface;
 use Psr\Http\Message\UriInterface;
+use Symfony\Component\DomCrawler\Crawler;
 use Symfony\Component\HtmlSanitizer\HtmlSanitizer;
 use Symfony\Component\HtmlSanitizer\HtmlSanitizerConfig;
 
 abstract class Extractor
 {
-    public abstract function support(UriInterface $uri): bool;
-
     /**
      * @return iterable<Content>
      */
-    public abstract function extract(UriInterface $uri, StreamInterface $body): iterable;
+    public abstract function extract(UriInterface $uri, Crawler $body): iterable;
 
     protected function sanitize(string $html): string
     {
@@ -84,6 +83,20 @@ abstract class Extractor
             }
         }
 
-        return join("\n", $result);
+        return trim(
+            join("\n", $result),
+            " \n-",
+        );
+    }
+
+    protected static function nodeToHtml(\DOMElement $node): ?string
+    {
+        $body = $node->ownerDocument->documentElement->firstChild->firstChild;
+        $document = new \DOMDocument();
+        $document->appendChild(
+            $document->importNode($node, true)
+        );
+
+        return $document->saveHTML();
     }
 }

@@ -12,13 +12,12 @@ use Psr\Http\Message\UriInterface;
 use Spatie\Crawler\CrawlObservers\CrawlObserver;
 use Spatie\Crawler\CrawlProfiles\CrawlInternalUrls;
 use Spatie\Crawler\Crawler;
+use Symfony\Component\DomCrawler\Crawler as SymfonyCrawler;
 
 require __DIR__ . '/../vendor/autoload.php';
 
 $extractor = new Aggregate(
     new E000,
-    new E001,
-    new E002,
 );
 
 file_put_contents(
@@ -52,7 +51,9 @@ $crawler = Crawler::create()
 
             echo "$url\n";
 
-            foreach ($this->extractor->extract($url, $response->getBody()) as $content) {
+            $crawler = new SymfonyCrawler((string) $response->getBody());
+
+            foreach ($this->extractor->extract($url, $crawler) as $content) {
                 $this->write($url, $content);
             }
         }

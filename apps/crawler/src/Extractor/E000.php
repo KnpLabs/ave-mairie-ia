@@ -6,36 +6,68 @@ namespace App\Extractor;
 
 use App\Content;
 use App\Extractor;
-use League\HTMLToMarkdown\HtmlConverter;
-use Psr\Http\Message\StreamInterface;
 use Psr\Http\Message\UriInterface;
 use Symfony\Component\DomCrawler\Crawler;
-use Symfony\Component\HtmlSanitizer\HtmlSanitizer;
-use Symfony\Component\HtmlSanitizer\HtmlSanitizerConfig;
 
 final class E000 extends Extractor
 {
-    private const URLS = [
-        'https://www.prefailles.fr',
-        'https://www.prefailles.fr/',
-        'https://www.prefailles.fr/categorie-actualites/*',
-        'https://www.prefailles.fr/categorie-agenda/*',
-        'https://www.prefailles.fr/systeme/*',
-    ];
-
-    public function support(UriInterface $uri): bool
+    public function extract(UriInterface $uri, Crawler $body): iterable
     {
-        foreach (self::URLS as $url) {
-            if (fnmatch($url, (string) $uri)) {
-                return true;
-            }
+        $title = $body->filter('.entry-title');
+
+        if (0 === count($title)) {
+            return;
         }
 
-        return false;
-    }
+        $title = $title->text();
 
-    public function extract(UriInterface $uri, StreamInterface $body): iterable
-    {
-        return [];
+        $introduction = $body->filter('.introduction');
+
+        $introduction = 0 === count($introduction)
+            ? ''
+            : $introduction->text()
+        ;
+
+        $article = $body->filter('.entry-content');
+
+        if (0 === count($article)) {
+            return;
+        }
+
+        $content = [];
+
+        foreach ($article->children() as $child) {
+            if ('h2' === $child->tagName) {
+                yield new Content(
+                    $title,
+                    $introduction,
+                    $this->cleanup(
+                        $this->convert(
+                            $this->sanitize(
+                                join("\n", $content),
+                            )
+                        )
+                    )
+                );
+
+                $content = [];
+            }
+
+            $content[] = self::nodeToHtml($child);
+        }
+
+        if ([] !== $content) {
+            yield new Content(
+                $title,
+                $introduction,
+                $this->cleanup(
+                    $this->convert(
+                        $this->sanitize(
+                            join("\n", $content),
+                        )
+                    )
+                )
+            );
+        }
     }
 }
