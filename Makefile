@@ -1,7 +1,7 @@
 STAGE ?= dev
 
 .PHONY: dev
-dev: build .install-deps start
+dev: .cp-env build .install-deps start
 
 .PHONY: build
 build:
@@ -16,6 +16,11 @@ start:
 stop:
 	@echo "Stopping the server..."
 	@docker-compose -f docker-compose.$(STAGE).yaml down
+
+.PHONY: .cp-env
+.cp-env:
+	@echo "Copying .env file..."
+	@cp -n .env.dist .env
 
 .PHONY: .install-deps
 .install-deps:
