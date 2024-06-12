@@ -24,7 +24,6 @@ export default function Index() {
     <div className={ styles.wrapper }>
       <h1 className={ styles.title }>Ave Ma<small>i</small>rie..IA</h1>
       <Chat messages={ messages } addMessage={ addMessage }/>
-      <img alt="Marie" src="/vierge-marie.png" />
     </div>
   );
 }

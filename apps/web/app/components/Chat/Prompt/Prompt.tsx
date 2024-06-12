@@ -4,7 +4,7 @@ import { useFetcher } from '@remix-run/react';
 
 const Prompt = ({ addMessage }: { addMessage: (message: string) => void }) => {
   const $form = useRef<HTMLFormElement>(null)
-  const fetcher = useFetcher()
+  const fetcher = useFetcher({ key: 'chat' })
 
   useEffect(() => {
     if (fetcher.state === 'submitting') {
