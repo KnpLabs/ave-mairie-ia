@@ -1,0 +1,763 @@
+<!doctype html>
+<!--[if lt IE 7]>     <html class="no-js lt-ie9 lt-ie8 lt-ie7 all-ie" lang="fr-FR"> <![endif]-->
+<!--[if IE 7]>        <html class="no-js lt-ie9 lt-ie8 all-ie" lang="fr-FR"> <![endif]-->
+<!--[if IE 8]>        <html class="no-js lt-ie9 all-ie" lang="fr-FR"> <![endif]-->
+<!--[if gt IE 8]>     <html class="no-js" lang="fr-FR"> <![endif]-->
+<!--[if gte IE 7]>     <html class="no-js all-ie" lang="fr-FR"> <![endif]-->
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="UTF-8">
+
+<title>Vos 15 élus locaux</title><meta name="description" content="Les membres du conseil municipal sont élus au suffrage universel direct pour une durée de 6 ans.Présentation du conseil municipal issu des élections de mars 2014." />
+<link rel="shortcut icon" type="image/png" href="https://www.prefailles.fr/wp-content/themes/prefailles/images/favicon.png" />
+<link rel="icon" type="image/vnd.microsoft.icon" href="https://www.prefailles.fr/wp-content/themes/prefailles/images/favicon.ico" />
+<link rel="apple-touch-icon" href="https://www.prefailles.fr/wp-content/themes/prefailles/images/favicon-iphone.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//www.prefailles.fr' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='stylesheet' id='colorbox-theme2-css'  href='https://www.prefailles.fr/wp-content/plugins/jquery-colorbox/themes/theme2/colorbox.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='leaflet-css'  href='https://www.prefailles.fr/wp-content/plugins/co-marquage-service-public/vendor/leaflet/leaflet.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='comarquage-css'  href='https://www.prefailles.fr/wp-content/plugins/co-marquage-service-public/assets/css/comarquage.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://www.prefailles.fr/wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel='stylesheet' id='context-actualites-css'  href='https://www.prefailles.fr/wp-content/plugins/creasit-actualites/css/style-context-actualites.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='creasit-agenda-css'  href='https://www.prefailles.fr/wp-content/plugins/creasit-agenda/public/css/creasit-agenda-public.css' type='text/css' media='all' />
+<link rel='stylesheet' id='context-agenda-css'  href='https://www.prefailles.fr/wp-content/plugins/creasit-agenda/public/css/style-context-agenda.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='css-fenetre-information-css'  href='https://www.prefailles.fr/wp-content/plugins/creasit-fenetre-information/css/styles-fenetre-information.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='style-info-bulle-plan-interactif-css'  href='https://www.prefailles.fr/wp-content/plugins/creasit-plan-interactif/css/style-info-bulle.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='plan-interactif-css'  href='https://www.prefailles.fr/wp-content/plugins/creasit-plan-interactif/css/style-plan-interactif.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='gdrf-public-styles-css'  href='https://www.prefailles.fr/wp-content/plugins/creasit-rgpd/public/css/public.css' type='text/css' media='all' />
+<link rel='stylesheet' id='reset-css'  href='https://www.prefailles.fr/wp-content/themes/noyau/assets/css/creasit-reset.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='dashicons-css'  href='https://www.prefailles.fr/wp-includes/css/dashicons.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='dflip-css'  href='https://www.prefailles.fr/wp-content/themes/noyau/assets/css/ReaderPDF/dflip.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='themify-icons-css'  href='https://www.prefailles.fr/wp-content/themes/noyau/assets/css/ReaderPDF/themify-icons.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='style-recherche-css'  href='https://www.prefailles.fr/wp-content/themes/noyau/assets/css/style-recherche.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='solution-css'  href='https://www.prefailles.fr/wp-content/themes/prefailles/css/styles.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='1024-css'  href='https://www.prefailles.fr/wp-content/themes/prefailles/css/responsive-1024.css' type='text/css' media='screen and (max-width: 1024px)' />
+<link rel='stylesheet' id='768-css'  href='https://www.prefailles.fr/wp-content/themes/prefailles/css/responsive-768.css' type='text/css' media='screen and (max-width: 768px)' />
+<link rel='stylesheet' id='480-css'  href='https://www.prefailles.fr/wp-content/themes/prefailles/css/responsive-480.css' type='text/css' media='screen and (max-width: 480px)' />
+<link rel='stylesheet' id='print-css'  href='https://www.prefailles.fr/wp-content/themes/prefailles/css/print.css' type='text/css' media='print' />
+<script type='text/javascript' src='https://www.prefailles.fr/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://www.prefailles.fr/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
+<script type='text/javascript' id='colorbox-js-extra'>
+/* <![CDATA[ */
+var jQueryColorboxSettingsArray = {"jQueryColorboxVersion":"4.6.2","colorboxInline":"false","colorboxIframe":"false","colorboxGroupId":"","colorboxTitle":"","colorboxWidth":"false","colorboxHeight":"false","colorboxMaxWidth":"false","colorboxMaxHeight":"false","colorboxSlideshow":"false","colorboxSlideshowAuto":"false","colorboxScalePhotos":"true","colorboxPreloading":"false","colorboxOverlayClose":"true","colorboxLoop":"true","colorboxEscKey":"true","colorboxArrowKey":"true","colorboxScrolling":"true","colorboxOpacity":"0.85","colorboxTransition":"elastic","colorboxSpeed":"350","colorboxSlideshowSpeed":"2500","colorboxClose":"fermer","colorboxNext":"suivant","colorboxPrevious":"pr\u00e9c\u00e9dent","colorboxSlideshowStart":"commencer le diaporama","colorboxSlideshowStop":"arr\u00eater le diaporama","colorboxCurrent":"{current} sur {total} images","colorboxXhrError":"This content failed to load.","colorboxImgError":"Image non trouv\u00e9e.","colorboxImageMaxWidth":"90%","colorboxImageMaxHeight":"90%","colorboxImageHeight":"false","colorboxImageWidth":"false","colorboxLinkHeight":"false","colorboxLinkWidth":"false","colorboxInitialHeight":"100","colorboxInitialWidth":"300","autoColorboxJavaScript":"true","autoHideFlash":"","autoColorbox":"true","autoColorboxGalleries":"","addZoomOverlay":"","useGoogleJQuery":"","colorboxAddClassToLinks":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.prefailles.fr/wp-content/plugins/jquery-colorbox/js/jquery.colorbox-min.js' id='colorbox-js'></script>
+<script type='text/javascript' src='https://www.prefailles.fr/wp-content/plugins/jquery-colorbox/js/jquery-colorbox-wrapper-min.js' id='colorbox-wrapper-js'></script>
+<script type='text/javascript' src='https://www.prefailles.fr/wp-content/plugins/creasit-agenda/public/js/creasit-agenda-public.js' id='creasit-agenda-js'></script>
+<script type='text/javascript' id='gdrf-public-scripts-js-extra'>
+/* <![CDATA[ */
+var gdrf_localize = {"gdrf_ajax_url":"https:\/\/www.prefailles.fr\/wp-admin\/admin-ajax.php","gdrf_success":"Votre demande a bien \u00e9t\u00e9 prise en compte, v\u00e9rifiez votre messagerie pour la confirmer..","gdrf_errors":"Des erreurs ont \u00e9t\u00e9 d\u00e9tect\u00e9es :"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.prefailles.fr/wp-content/plugins/creasit-rgpd/public/js/gdrf-public.js' id='gdrf-public-scripts-js'></script>
+<script type='text/javascript' src='https://www.prefailles.fr/wp-content/themes/noyau/assets/js/Admin/script-checkbox-rgpd-gf.js' id='script-checkbox-rgpd-gf-js'></script>
+<link rel="https://api.w.org/" href="https://www.prefailles.fr/wp-json/" /><link rel="alternate" type="application/json" href="https://www.prefailles.fr/wp-json/wp/v2/pages/2020" /><link rel="canonical" href="https://www.prefailles.fr/vos-15-elus-locaux/" />
+<link rel='shortlink' href='https://www.prefailles.fr/?p=2020' />
+<link rel="alternate" type="application/rss+xml" href="https://www.prefailles.fr/feed/?post_type=post" title="Flux RSS des actualités">
+<link rel="alternate" type="application/rss+xml" href="https://www.prefailles.fr/feed/?post_type=affichage_liste" title="Flux RSS des affichages listes">
+<link rel="alternate" type="application/rss+xml" href="https://www.prefailles.fr/feed/?post_type=agenda" title="Flux RSS de l'agenda">
+        <script type="application/javascript">
+            var ajaxurl_website = "https:\/\/www.prefailles.fr\/wp-admin\/admin-ajax.php";
+            var ajaxnonce = "ba7e6a0dfb";
+        </script><script type="application/javascript">
+			var dFlipLocation = "https://www.prefailles.fr/wp-content/themes/noyau/assets/";
+			var dFlipLocation_css = "https://www.prefailles.fr/wp-content/themes/noyau/assets/css/ReaderPDF/";
+			var dFlipLocation_js = "https://www.prefailles.fr/wp-content/themes/noyau/assets/js/ReaderPDF/";
+			var dFlipLocation_images = "https://www.prefailles.fr/wp-content/themes/noyau/assets/images/TinyMCE/ReaderPDF/";
+			var dFlipLocation_fonts = "https://www.prefailles.fr/wp-content/themes/noyau/assets/fonts/ReaderPDF/";
+			var dFlipLocation_sounds = "https://www.prefailles.fr/wp-content/themes/noyau/assets/sounds/ReaderPDF/";
+		</script><meta property="og:title" content="Vos 15 élus locaux " />
+<meta property="og:description" content="Les membres du conseil municipal sont élus au suffrage universel direct pour une durée de 6 ans.
+Présentation du conseil municipal issu des élections du 15 mars 2020 (installé le 23 mai 2020)."/>
+<meta property="og:url" content="https://www.prefailles.fr/vos-15-elus-locaux/" />
+<meta property="og:image" content="" />
+<meta property="og:image:secure_url" content="" />
+<style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}</style><!--[if LTE IE 9]>
+<script type='text/javascript' src='https://www.prefailles.fr/wp-content/themes/noyau/js/html5shiv.js'></script>
+<![endif]-->
+
+</head>
+
+<body class="page-template-default page page-id-2020 unknown">
+<div class="global-wrapper">
+    <div class="btn-scroll-top">
+        <a href="#" class="scroll-top" title="Retour en haut de la page">Retour en haut de la page</a>
+    </div>
+<header id="header">
+	<div class="center">
+        <div class="menu-wrapper clearfix">
+            <div class="toggleMenu"><span class="icon-menu"></span><span class="menu">Menu</span></div>
+            <div class="menu-menu-principal-container"><ul id="menu-menu-principal" class="main-menu clearfix"><li id="menu-item-3047" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current_page_ancestor menu-item-has-children menu-item-3047 item-1">
+<a title="Vie &lt;br&gt;municipale" href="#" onclick="return false;">Vie <br>municipale</a>
+<div class='sub-menu'>
+<ul class='bloc-menu-left'>
+	<li id="menu-item-3048" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3048 item-2">
+<a title="La Mairie" href="https://www.prefailles.fr/la-vie-municipale/la-mairie/">La Mairie</a>
+</li>
+	<li id="menu-item-3049" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste current-menu-ancestor current-menu-parent menu-item-has-children menu-item-3049 item-2">
+<a title="L&#039;équipe municipale" href="https://www.prefailles.fr/listes/lequipe-municipale/">L&rsquo;équipe municipale</a>
+</li>
+		<li id="menu-item-3672" class="children-2 menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2020 current_page_item menu-item-3672 item-2">
+<a title="Vos 15 élus locaux" href="https://www.prefailles.fr/vos-15-elus-locaux/">Vos 15 élus locaux</a>
+</li>
+		<li id="menu-item-3673" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3673 item-2">
+<a title="Les permanences de vos élus" href="https://www.prefailles.fr/les-permanences-de-vos-elus/">Les permanences de vos élus</a>
+</li>
+		<li id="menu-item-3674" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3674 item-2">
+<a title="Les Conseils municipaux" href="https://www.prefailles.fr/les-conseils-municipaux/">Les Conseils municipaux</a>
+</li>
+		<li id="menu-item-3677" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3677 item-2">
+<a title="Les commissions municipales" href="https://www.prefailles.fr/les-commissions-municipales/">Les commissions municipales</a>
+</li>
+		<li id="menu-item-4648" class="children-2 menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-4648 item-2">
+<a title="Les commissions extramunicipales" href="https://www.prefailles.fr/listes/les-commissions-extramunicipales/">Les commissions extramunicipales</a>
+</li>
+		<li id="menu-item-3676" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3676 item-2">
+<a title="Le Conseil municipal des enfants" href="https://www.prefailles.fr/le-conseil-municipal-des-enfants/">Le Conseil municipal des enfants</a>
+</li>
+	<li id="menu-item-3052" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-has-children menu-item-3052 item-2">
+<a title="Les publications" href="https://www.prefailles.fr/listes/les-publications/">Les publications</a>
+</li>
+		<li id="menu-item-3685" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3685 item-2">
+<a title="Le bulletin municipal d&rsquo;été" href="https://www.prefailles.fr/le-bulletin-municipal/">Le bulletin municipal d&rsquo;été</a>
+</li>
+		<li id="menu-item-3686" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3686 item-2">
+<a title="Le préf&#039;Infos" href="https://www.prefailles.fr/le-prefinfos/">Le préf&rsquo;Infos</a>
+</li>
+	<li id="menu-item-3053" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-has-children menu-item-3053 item-2">
+<a title="Les Locations" href="https://www.prefailles.fr/listes/les-locations/">Les Locations</a>
+</li>
+		<li id="menu-item-3679" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3679 item-2">
+<a title="Louer la pêcherie" href="https://www.prefailles.fr/louer-la-pecherie/">Louer la pêcherie</a>
+</li>
+
+</ul>
+<ul class='bloc-menu-middle'></ul>
+<ul class='bloc-menu-right'></ul>
+</div>
+<li id="menu-item-3054" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3054 item-2">
+<a title="Services &lt;br&gt; municipaux" href="#" onclick="return false;">Services <br> municipaux</a>
+<div class='sub-menu'>
+<ul class='bloc-menu-left'>
+	<li id="menu-item-3536" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-has-children menu-item-3536 item-3">
+<a title="L&#039;État civil" href="https://www.prefailles.fr/listes/etat-civil/">L&rsquo;État civil</a>
+</li>
+		<li id="menu-item-3318" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3318 item-3">
+<a title="Actes de naissance, mariage, décès" href="https://www.prefailles.fr/demande-de-copies-dactes-de-naissance-de-mariage-ou-de-deces/">Actes de naissance, mariage, décès</a>
+</li>
+		<li id="menu-item-3450" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3450 item-3">
+<a title="Naissance-reconnaissance" href="https://www.prefailles.fr/declaration-de-naissance-reconnaissance/">Naissance-reconnaissance</a>
+</li>
+		<li id="menu-item-3411" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3411 item-3">
+<a title="Parrainage Civil" href="https://www.prefailles.fr/parrainage-civil/">Parrainage Civil</a>
+</li>
+		<li id="menu-item-3431" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3431 item-3">
+<a title="Recensement citoyen" href="https://www.prefailles.fr/recensement-citoyen/">Recensement citoyen</a>
+</li>
+		<li id="menu-item-3457" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3457 item-3">
+<a title="Mariage" href="https://www.prefailles.fr/mariage/">Mariage</a>
+</li>
+		<li id="menu-item-3412" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3412 item-3">
+<a title="Pacte Civil de Solidarité (PACS)" href="https://www.prefailles.fr/le-pacte-civil-de-solidarite-pacs/">Pacte Civil de Solidarité (PACS)</a>
+</li>
+		<li id="menu-item-3414" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3414 item-3">
+<a title="Duplicata d&#039;un livret de famille" href="https://www.prefailles.fr/duplicata-dun-livret-de-famille/">Duplicata d&rsquo;un livret de famille</a>
+</li>
+		<li id="menu-item-3352" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3352 item-3">
+<a title="Carte Nationale d’Identité" href="https://www.prefailles.fr/carte-nationale-didentite/">Carte Nationale d’Identité</a>
+</li>
+		<li id="menu-item-3420" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3420 item-3">
+<a title="Passeport" href="https://www.prefailles.fr/passeport/">Passeport</a>
+</li>
+		<li id="menu-item-3368" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3368 item-3">
+<a title="Décès" href="https://www.prefailles.fr/deces/">Décès</a>
+</li>
+		<li id="menu-item-3353" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3353 item-3">
+<a title="Certificat de vie – Légalisation de signature" href="https://www.prefailles.fr/certificat-de-vie-legalisation-de-signature/">Certificat de vie – Légalisation de signature</a>
+</li>
+		<li id="menu-item-3440" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3440 item-3">
+<a title="Inscription sur les listes électorales" href="https://www.prefailles.fr/inscription-sur-les-listes-electorales/">Inscription sur les listes électorales</a>
+</li>
+	<li id="menu-item-3537" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-has-children menu-item-3537 item-3">
+<a title="L&#039;Urbanisme" href="https://www.prefailles.fr/listes/urbanisme/">L&rsquo;Urbanisme</a>
+</li>
+		<li id="menu-item-3539" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3539 item-3">
+<a title="Autorisations d&#039;urbanisme" href="https://www.prefailles.fr/urbanisme/">Autorisations d&rsquo;urbanisme</a>
+</li>
+		<li id="menu-item-3538" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3538 item-3">
+<a title="Plan local d&#039;urbanisme" href="https://www.prefailles.fr/plan-local-durbanisme/">Plan local d&rsquo;urbanisme</a>
+</li>
+	<li id="menu-item-3604" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-has-children menu-item-3604 item-3">
+<a title="L&#039;Environnement" href="https://www.prefailles.fr/listes/environnement/">L&rsquo;Environnement</a>
+</li>
+		<li id="menu-item-3972" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3972 item-3">
+<a title="Cadre de vie" href="https://www.prefailles.fr/cadre-de-vie/">Cadre de vie</a>
+</li>
+		<li id="menu-item-3606" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3606 item-3">
+<a title="Réserve naturelle régionale" href="https://www.prefailles.fr/reserve-naturelle-regionale/">Réserve naturelle régionale</a>
+</li>
+		<li id="menu-item-3605" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3605 item-3">
+<a title="Circuits de randonnées" href="https://www.prefailles.fr/circuits-de-randonnees/">Circuits de randonnées</a>
+</li>
+		<li id="menu-item-3540" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3540 item-3">
+<a title="Labels" href="https://www.prefailles.fr/environnement/">Labels</a>
+</li>
+	<li id="menu-item-3541" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3541 item-3">
+<a title="Les finances" href="https://www.prefailles.fr/finances/">Les finances</a>
+</li>
+	<li id="menu-item-3542" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3542 item-3">
+<a title="Les Ressources humaines" href="https://www.prefailles.fr/ressources-humaines/">Les Ressources humaines</a>
+</li>
+	<li id="menu-item-3056" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3056 item-3">
+<a title="Les services Techniques" href="https://www.prefailles.fr/les-services-municipaux/les-services-techniques/">Les services Techniques</a>
+</li>
+	<li id="menu-item-3057" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3057 item-3">
+<a title="La Police municipale" href="https://www.prefailles.fr/les-services-municipaux/la-police-municipale/">La Police municipale</a>
+</li>
+	<li id="menu-item-3059" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-has-children menu-item-3059 item-3">
+<a title="L’enfance" href="https://www.prefailles.fr/listes/la-vie-scolaire/">L’enfance</a>
+</li>
+		<li id="menu-item-3544" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3544 item-3">
+<a title="École publique" href="https://www.prefailles.fr/lecole/">École publique</a>
+</li>
+		<li id="menu-item-3545" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3545 item-3">
+<a title="Périscolaire (Compétence de « Pornic agglo » à compter du 01.01.2020)" href="https://www.prefailles.fr/le-periscolaire/">Périscolaire (Compétence de « Pornic agglo » à compter du 01.01.2020)</a>
+</li>
+		<li id="menu-item-3546" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3546 item-3">
+<a title="RELAIS PETITE ENFANCE" href="https://www.prefailles.fr/les-tap/">RELAIS PETITE ENFANCE</a>
+</li>
+		<li id="menu-item-3547" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3547 item-3">
+<a title="Restaurant scolaire" href="https://www.prefailles.fr/le-restaurant-scolaire/">Restaurant scolaire</a>
+</li>
+	<li id="menu-item-3060" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3060 item-3">
+<a title="La Crèche (Compétence de « Pornic Agglo » à compter du 01.01.2020)" href="https://www.prefailles.fr/les-services-municipaux/la-creche/">La Crèche (Compétence de « Pornic Agglo » à compter du 01.01.2020)</a>
+</li>
+	<li id="menu-item-3061" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3061 item-3">
+<a title="Le CCAS" href="https://www.prefailles.fr/les-services-municipaux/le-ccas/">Le CCAS</a>
+</li>
+
+</ul>
+<ul class='bloc-menu-middle'></ul>
+<ul class='bloc-menu-right'></ul>
+</div>
+<li id="menu-item-3802" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-3802 item-3">
+<a title="Centre nautique" href="https://www.prefailles.fr/categorie-actualites/centre-nautique/">Centre <br> nautique</a>
+<div class='sub-menu'>
+<ul class='bloc-menu-left'>
+	<li id="menu-item-3065" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3065 item-4">
+<a title="L&#039;Ecole de voile" href="https://www.prefailles.fr/lecole-de-voile/">L&rsquo;Ecole de voile</a>
+</li>
+	<li id="menu-item-3787" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3787 item-4">
+<a title="Bureau du Port" href="https://www.prefailles.fr/la-capitainerie/">Bureau du Port</a>
+</li>
+
+</ul>
+<ul class='bloc-menu-middle'></ul>
+<ul class='bloc-menu-right'></ul>
+</div>
+<li id="menu-item-3067" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3067 item-4">
+<a title="Tourisme et&lt;br&gt;découverte" href="https://www.prefailles.fr/tourisme-et-decouverte/">Tourisme et<br>découverte</a>
+<div class='sub-menu'>
+<ul class='bloc-menu-left'>
+	<li id="menu-item-3068" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-has-children menu-item-3068 item-5">
+<a title="La Station balnéaire" href="https://www.prefailles.fr/listes/la-station-balneaire/">La Station balnéaire</a>
+</li>
+		<li id="menu-item-3687" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3687 item-5">
+<a title="Histoire" href="https://www.prefailles.fr/histoire/">Histoire</a>
+</li>
+		<li id="menu-item-3688" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3688 item-5">
+<a title="Préfailles en chiffres" href="https://www.prefailles.fr/prefailles-en-chiffres/">Préfailles en chiffres</a>
+</li>
+		<li id="menu-item-3689" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3689 item-5">
+<a title="Les plages" href="https://www.prefailles.fr/les-plages/">Les plages</a>
+</li>
+		<li id="menu-item-3693" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3693 item-5">
+<a title="Covoiturage" href="https://www.prefailles.fr/covoiturage/">Covoiturage</a>
+</li>
+		<li id="menu-item-3820" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3820 item-5">
+<a title="Circuits de randonnées" href="https://www.prefailles.fr/circuits-de-randonnees/">Circuits de randonnées</a>
+</li>
+	<li id="menu-item-3069" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-has-children menu-item-3069 item-5">
+<a title="Nos manifestations" href="https://www.prefailles.fr/listes/les-manifestations/">Nos manifestations</a>
+</li>
+		<li id="menu-item-3699" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3699 item-5">
+<a title="« Les Musicales de Préfailles »" href="https://www.prefailles.fr/les-musicales/">« Les Musicales de Préfailles »</a>
+</li>
+	<li id="menu-item-3072" class="menu-item menu-item-type-post_type menu-item-object-page-systeme menu-item-3072 item-5">
+<a title="Plan Interactif de la ville" href="https://www.prefailles.fr/systeme/plan-interactif/">Plan Interactif de la ville</a>
+</li>
+
+</ul>
+<ul class='bloc-menu-middle'></ul>
+<ul class='bloc-menu-right'></ul>
+</div>
+<li id="menu-item-3073" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3073 item-5">
+<a title="Culture, sports &lt;br&gt;et loisirs" href="#" onclick="return false;">Culture, sports <br>et loisirs</a>
+<div class='sub-menu'>
+<ul class='bloc-menu-left'>
+	<li id="menu-item-3074" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-has-children menu-item-3074 item-6">
+<a title="Liste des associations" href="https://www.prefailles.fr/listes/liste-des-associations/">Liste des associations</a>
+</li>
+		<li id="menu-item-3705" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3705 item-6">
+<a title="Associations culturelles" href="https://www.prefailles.fr/associations-culturelles/">Associations culturelles</a>
+</li>
+		<li id="menu-item-3706" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3706 item-6">
+<a title="Associations de loisirs" href="https://www.prefailles.fr/associations-de-loisirs/">Associations de loisirs</a>
+</li>
+		<li id="menu-item-3707" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3707 item-6">
+<a title="Associations sportives" href="https://www.prefailles.fr/associations-sportives/">Associations sportives</a>
+</li>
+		<li id="menu-item-3708" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3708 item-6">
+<a title="Associations de vie locale" href="https://www.prefailles.fr/associations-de-vie-locale/">Associations de vie locale</a>
+</li>
+	<li id="menu-item-4348" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-has-children menu-item-4348 item-6">
+<a title="Les commerçants, artisans et professions libérales" href="https://www.prefailles.fr/listes/les-commercants-artisans-et-professions-liberales/">Les commerçants, artisans et professions libérales</a>
+</li>
+		<li id="menu-item-4349" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-4349 item-6">
+<a title="Les commerçants" href="https://www.prefailles.fr/les-commercants/">Les commerçants</a>
+</li>
+		<li id="menu-item-4350" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-4350 item-6">
+<a title="Les artisans" href="https://www.prefailles.fr/les-artisans/">Les artisans</a>
+</li>
+		<li id="menu-item-4351" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-4351 item-6">
+<a title="Les professions libérales" href="https://www.prefailles.fr/les-professions-liberales/">Les professions libérales</a>
+</li>
+		<li id="menu-item-4352" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-4352 item-6">
+<a title="L&#039;hébergement" href="https://www.prefailles.fr/lhebergement/">L&rsquo;hébergement</a>
+</li>
+
+</ul>
+<ul class='bloc-menu-middle'></ul>
+<ul class='bloc-menu-right'></ul>
+</div>
+</ul></div>            <div class="search">
+                
+  <form method="get" id="searchform" action="https://www.prefailles.fr/">
+    <div>
+		<input type="text" class="rechercher" placeholder="Rechercher..." name="s" id="s" />
+		<button type="submit" id="searchsubmit"><span>OK</span></button>
+    </div>
+  </form>            </div>
+        </div>
+        <div class="identite">
+    		<a href="https://www.prefailles.fr" title="Logo de la commune">
+    			<h1 class="logo">Préfailles</h1>
+                <h2 class="tagline">Qui y mouille y reste&#8230;</h2>
+    		</a>
+            <div class="tools">
+                <ul>
+                    <li>
+                        <a href="https://www.prefailles.fr/systeme/accessibilite/" title="Accessibilité">
+                            <svg class="accessibilite" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 12.1 10.6" style="enable-background:new 0 0 12.1 10.6;" xml:space="preserve">
+                            <style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;}</style>
+                            <path class="st0" d="M5.9,1.9c3.2,0,4.9,1.4,6.2,3.4C11.2,7,9.7,8.1,7.5,8.6C7.7,9.1,7.8,9.8,8,10.4c-0.1,0.2-0.4,0.1-0.6,0.2 C7.1,9.5,6.8,8.4,6.6,7.4C6.3,7.4,6.1,7.4,6,7.5C6,7.9,6.2,8.3,6.3,8.8c-0.3,0-0.5,0-0.6,0C5.5,8.3,5.4,7.8,5.3,7.4 C5.1,7.3,4.9,7.2,4.7,7.1c0.1,0.6,0.3,1,0.3,1.6c-0.2,0-0.5-0.1-0.7-0.1C4,6.7,3.5,5.1,3.1,3.2c-0.2,0-0.4,0.2-0.5,0.2 c0.3,1.6,0.8,3.2,1.1,4.8C3.4,8.3,3.2,8.1,3,8.1C2.7,6.6,2.3,5.3,2,3.9C1.8,4,1.7,4.1,1.6,4.2c0.2,1.2,0.6,2.3,0.8,3.5 c-1.1-0.3-1-1.8-1.3-2.9C0.4,5.1,0.9,6,1,6.5C0.8,6.4,0,5.7,0,5.2C0,4.9,0.6,4.3,0.9,4c1-1,2.7-1.9,4.4-2C5.2,1.3,5,0.8,4.9,0.1 C5.8-0.5,5.6,1.3,5.9,1.9z M4.8,2.6C4.9,2.9,4.9,3.2,5,3.4c0.1-0.1,0.4-0.1,0.5-0.2c0-0.2-0.1-0.5-0.2-0.6C5.2,2.6,5,2.6,4.8,2.6z  M6.2,3.2c1.9,0.1,2.3,3,0.9,3.9c0.1,0.1,0,0.5,0.2,0.5c2.1-1.1,1.3-5.3-1.3-5.1C6.1,2.8,6.2,3,6.2,3.2z M4.1,2.8 C4,2.9,3.9,2.9,3.7,2.9c0.2,0.4,0.2,1,0.4,1.4c0-0.3,0.3-0.4,0.3-0.6C4.3,3.5,4.4,3,4.1,2.8z M8.4,7.7c1.2-0.5,2.3-1.2,2.9-2.4 c-0.7-1-1.7-1.9-2.9-2.2C9.6,3.9,9.4,6.9,8.4,7.7z"/></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.prefailles.fr/systeme/flux-rss/" title="Flux RSS">
+                            <svg class="rss" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 8.3 8.2" style="enable-background:new 0 0 8.3 8.2;" xml:space="preserve">
+                            <style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;}</style>
+                            <path class="st0" d="M1.2,5.9C0.6,5.9,0,6.4,0,7.1c0,0.6,0.5,1.2,1.2,1.2c0.6,0,1.2-0.5,1.2-1.2C2.3,6.4,1.8,5.9,1.2,5.9z M0,4.3V2.8c0.1,0,0.3,0,0.4,0c2.8,0,5.1,2.3,5.1,5.1c0,0.1,0,0.3,0,0.4H4C4,8.1,4,8,4,7.9c0-2-1.6-3.6-3.6-3.6C0.3,4.3,0.1,4.3,0,4.3zM0,1.6V0c0.1,0,0.3,0,0.4,0c4.3,0,7.9,3.5,7.9,7.9c0,0.1,0,0.3,0,0.4H6.7c0-0.1,0-0.3,0-0.4c0-3.5-2.8-6.3-6.3-6.3C0.3,1.5,0.1,1.5,0,1.6z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.prefailles.fr/systeme/nous-contacter/" title="Nous contacter">
+                            <svg class="contact" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 11.7 8" style="enable-background:new 0 0 11.7 8;" xml:space="preserve">
+                            <style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;}</style>
+                            <path class="st0" d="M5.8,6.9L8,4.7L11.3,8H0.3l3.3-3.3L5.8,6.9z M0,6.7V1.3L2.9,4L0,6.7z M0,0h11.6L5.8,5.4L0,0z M8.8,4l2.9-2.7v5.4L8.8,4z"/></svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+	</div>	
+	<div class="overlay-menu"></div>
+        </header>
+
+	<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an outdated browser. <a href="https://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+	<![endif]-->
+ 
+<div id="wrapper" class="clearfix">
+
+
+<div class="bandeau-publications">
+    <img class="image-bandeau" src="https://www.prefailles.fr/wp-content/themes/prefailles/images/bandeau/default1.jpg" alt="Bandeau de la page Vos 15 élus locaux" />      
+</div>
+<div class="center">
+    <section class="header-page">
+                        <div class="wrapper-breadcrumb">
+            <div id="breadcrumbs">    
+                                <!--cdlPosition--><div class="vous-etes-ici">VOUS ÊTES ICI :</div>
+                <div><span><a title="Accueil" href="https://www.prefailles.fr" class="lien-accueil-breadcrumb">Accueil</a></span><span class="sep">•</span><span><a href="https://www.prefailles.fr/la-vie-municipale/" title="La Vie municipale">La Vie municipale</a></span><span class="sep">•</span><span><a href="https://www.prefailles.fr/listes/lequipe-municipale/" title="L&rsquo;équipe municipale">L&rsquo;équipe municipale</a></span><span class="sep">•</span><span class="post-title">Vos 15 élus locaux</span></div><!--/cdlPosition-->
+            </div>
+        </div>
+                    <div class="header-publication clearfix">
+                <h1 class="entry-title">Vos 15 élus locaux</h1>
+                                    <div class="introduction">
+                        <p>Les membres du conseil municipal sont élus au suffrage universel direct pour une durée de 6 ans.<br />
+Présentation du conseil municipal issu des élections du 15 mars 2020 (installé le 23 mai 2020).</p>
+                    </div>
+                            </div>
+            </section>      
+        <div id="primary"  role="main" class="fleft affichage-savoir-plus">                 
+            <article id="post-2020" class="post-2020 page type-page status-publish hentry">
+
+        		<div class="entry-content">
+
+        			<div class="clearBoth"></div>
+<p>DISCOURS DE MONSIEUR LE MAIRE / INSTALLATION DU CONSEIL MUNICIPAL / SAMEDI 23 MAI 2020</p>
+<p><a class="miniature-pdf" href="https://www.prefailles.fr/medias/2020/05/Discours-du-maire-installation-des-elus-le-23.05.2020.pdf" target="_blank" rel="noopener noreferrer"><img class="colorbox-2020"  src="https://www.prefailles.fr/medias/miniature-pdf/miniature-discours-du-maire-installation-des-elus-le-23.05.2020-100x150.jpg" alt="Discours du maire – installation des élus le 23.05.2020" /><span class="wp-caption-text"><span class="legende">Discours de Monsieur CAUDAL du 23.05.2020</span></span></a></p>
+<p>&nbsp;</p>
+<h2>Les élus (MANDATURE 2020 &#8211; 2026)</h2>
+<h3><b>Le Maire</b></h3>
+<p><b><a href="https://www.prefailles.fr/medias/2020/05/CAUDAL-Claude.jpg"><img loading="lazy" class="alignleft wp-image-7092 size-full colorbox-2020" src="https://www.prefailles.fr/medias/2020/05/CAUDAL-Claude-e1590397378686.jpg" alt="" width="125" height="187" /></a></b></p>
+<p>&nbsp;</p>
+<p><b>Claude CAUDAL<br />
+</b>Maire de Préfailles<br />
+Président de droit de toutes les Commissions</p>
+<p>Vice-président de la Communauté d&rsquo;agglomération « Pornic agglo Pays de Retz »</p>
+<div class="clearBoth"></div>
+<h3><b> </b><b>Les Adjoints</b></h3>
+<p><b><a href="https://www.prefailles.fr/medias/2020/05/MARTINE-Edith.jpg"><img loading="lazy" class="alignleft wp-image-7093 size-full colorbox-2020" src="https://www.prefailles.fr/medias/2020/05/MARTINE-Edith-e1590397694944.jpg" alt="" width="125" height="187" /></a></b></p>
+<p>&nbsp;</p>
+<p><b>Edith MARTINE<br />
+</b>1ère Adjointe au Maire, en charge de l&rsquo;Environnement de l&rsquo;Urbanisme</p>
+<div class="clearBoth"></div>
+<p><b><a href="https://www.prefailles.fr/medias/2020/05/NADEAU-Gerard.jpg"><img loading="lazy" class="alignleft wp-image-7094 size-full colorbox-2020" src="https://www.prefailles.fr/medias/2020/05/NADEAU-Gerard-e1590397826809.jpg" alt="" width="125" height="187" /></a></b></p>
+<p>&nbsp;</p>
+<p><b>Gérard NADEAU<br />
+</b>2ème Adjoint au Maire, en charge des Services à la Population</p>
+<div class="clearBoth"></div>
+<h3><b>Les Conseillers D</b><b>é</b><b></b><b>L</b><b>é</b><b>GU</b><b>é</b><b>S</b></h3>
+<p><a href="https://www.prefailles.fr/medias/2020/05/MAGNIER-Isabelle.jpg"><img loading="lazy" class="alignleft wp-image-7095 size-full colorbox-2020" src="https://www.prefailles.fr/medias/2020/05/MAGNIER-Isabelle-e1590398274111.jpg" alt="" width="125" height="187" /></a></p>
+<p>&nbsp;</p>
+<p><b>Isabelle MAGNIER<br />
+</b>Conseillère municipale</p>
+<p>Déléguée à la Petite Enfance, l&rsquo;Enfance, la Jeunesse, aux Activités sportives</p>
+<div class="clearBoth"></div>
+<p><b><a href="https://www.prefailles.fr/medias/2020/05/BODY-Serge.jpg"><img loading="lazy" class="alignleft wp-image-7096 size-full colorbox-2020" src="https://www.prefailles.fr/medias/2020/05/BODY-Serge-e1590398343624.jpg" alt="" width="125" height="187" /></a></b></p>
+<p>&nbsp;</p>
+<p><b>Serge BODY</b><br />
+Conseiller municipal</p>
+<p>Délégué au Développement économique et aux Travaux communaux</p>
+<div class="clearBoth"></div>
+<div class="clearBoth"></div>
+<p><b><a href="https://www.prefailles.fr/medias/2020/05/BRANDEL-Anthony.jpg"><img loading="lazy" class="alignleft wp-image-7097 size-full colorbox-2020" src="https://www.prefailles.fr/medias/2020/05/BRANDEL-Anthony-e1590398598564.jpg" alt="" width="125" height="187" /></a></b></p>
+<p>&nbsp;</p>
+<p><b>Anthony BRANDEL</b><br />
+Conseiller municipal</p>
+<p>Délégué aux Finances, aux Ressources humaines et à la Mutualisation</p>
+<div class="clearBoth"></div>
+<p><b><a href="https://www.prefailles.fr/medias/2021/03/CRUAUD-Pascallle.jpg"><img loading="lazy" class="alignleft wp-image-7816 size-full colorbox-2020" src="https://www.prefailles.fr/medias/2021/03/CRUAUD-Pascallle-e1614685445183.jpg" alt="" width="125" height="187" /></a></b></p>
+<p>&nbsp;</p>
+<p><b>Pascalle CRUAUD</b><br />
+Conseillère municipale</p>
+<p>Déléguée à l&rsquo;Action sociale</p>
+<div class="clearBoth"></div>
+<p><b><a href="https://www.prefailles.fr/medias/2020/05/FULTON-Henri.jpg"><img loading="lazy" class="alignleft wp-image-7099 size-full colorbox-2020" src="https://www.prefailles.fr/medias/2020/05/FULTON-Henri-e1590398822174.jpg" alt="" width="125" height="187" /></a></b></p>
+<p>&nbsp;</p>
+<p><b>Henri FULTON<br />
+</b>Conseiller municipal</p>
+<p>Délégué aux Actions culturelles, aux Animations, à la Communication</p>
+<p>&nbsp;</p>
+<div class="clearBoth"></div>
+<p><a href="https://www.prefailles.fr/medias/2020/05/FERRON-Dominique.jpg" rel="attachment wp-att-3869"><img loading="lazy" class="alignleft wp-image-7100 size-full colorbox-2020" src="https://www.prefailles.fr/medias/2020/05/FERRON-Dominique-e1590398918574.jpg" alt="" width="125" height="187" /></a></p>
+<p>&nbsp;</p>
+<p><b>Dominique FERRON<br />
+</b>Conseillère municipale</p>
+<p>Déléguée à la Mobilité-Transport</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3><b>Les AUTRES Conseillers</b></h3>
+<p><a href="https://www.prefailles.fr/medias/2022/07/AUGIER-DE-MOUSSAC-Thomas.jpg"><img loading="lazy" class="alignleft size-thumbnail wp-image-9069 colorbox-2020" src="https://www.prefailles.fr/medias/2022/07/AUGIER-DE-MOUSSAC-Thomas-150x150.jpg" alt="" width="150" height="150" srcset="https://www.prefailles.fr/medias/2022/07/AUGIER-DE-MOUSSAC-Thomas-150x150.jpg 150w, https://www.prefailles.fr/medias/2022/07/AUGIER-DE-MOUSSAC-Thomas-180x180.jpg 180w, https://www.prefailles.fr/medias/2022/07/AUGIER-DE-MOUSSAC-Thomas-104x104.jpg 104w, https://www.prefailles.fr/medias/2022/07/AUGIER-DE-MOUSSAC-Thomas-400x400.jpg 400w, https://www.prefailles.fr/medias/2022/07/AUGIER-DE-MOUSSAC-Thomas-75x75.jpg 75w, https://www.prefailles.fr/medias/2022/07/AUGIER-DE-MOUSSAC-Thomas-102x102.jpg 102w, https://www.prefailles.fr/medias/2022/07/AUGIER-DE-MOUSSAC-Thomas-55x55.jpg 55w, https://www.prefailles.fr/medias/2022/07/AUGIER-DE-MOUSSAC-Thomas-340x340.jpg 340w" sizes="(max-width: 150px) 100vw, 150px" /></a></p>
+<p><strong>Thomas AUGIER DE MOUSSAC</strong></p>
+<p>Conseiller municipal</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a href="https://www.prefailles.fr/medias/2020/05/CHALHOUB-Mathilde.jpg"><img loading="lazy" class="alignleft wp-image-7101 size-full colorbox-2020" src="https://www.prefailles.fr/medias/2020/05/CHALHOUB-Mathilde-e1590399144348.jpg" alt="" width="125" height="187" /><b></b></a></p>
+<p>&nbsp;</p>
+<p><strong>Mathilde CHALHOUB</strong></p>
+<p>Conseillère municipale</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a href="https://www.prefailles.fr/medias/2020/05/MASSIGNON-Jerome.jpg"><img loading="lazy" class="alignleft wp-image-7103 size-full colorbox-2020" src="https://www.prefailles.fr/medias/2020/05/MASSIGNON-Jerome-e1590399478942.jpg" alt="" width="125" height="187" /></a></p>
+<p>&nbsp;</p>
+<p><strong>Jérôme MASSIGNON</strong></p>
+<p>Conseiller municipal</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a href="https://www.prefailles.fr/medias/2021/03/MARINHO-Stephane.jpg"><img loading="lazy" class="alignleft wp-image-7828 size-full colorbox-2020" src="https://www.prefailles.fr/medias/2021/03/MARINHO-Stephane-e1614868709791.jpg" alt="" width="125" height="187" /></a></p>
+<p><strong>Stéphane MARINHO</strong></p>
+<p>Conseiller municipal</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a href="https://www.prefailles.fr/medias/2020/05/FEVE-TROESTLER-Frederique-2-e1590400275865.jpg"><img loading="lazy" class="alignleft wp-image-7106 size-full colorbox-2020" src="https://www.prefailles.fr/medias/2020/05/FEVE-TROESTLER-Frederique-2-e1590400275865.jpg" alt="" width="125" height="199" /></a></p>
+<p>&nbsp;</p>
+<p><b>Frédérique FEVE TROESTLER</b><br />
+Conseillère municipale</p>
+<div class="clearBoth"></div>
+<p>&nbsp;</p>
+<div class="clearBoth"></div>
+<p><b><a href="https://www.prefailles.fr/medias/2020/05/SAULNIER-Philippe-2-scaled.jpg" rel="attachment wp-att-4031"><img loading="lazy" class="alignleft wp-image-7118 size-full colorbox-2020" src="https://www.prefailles.fr/medias/2020/05/SAULNIER-Philippe-2-scaled-e1590500007486.jpg" alt="" width="125" height="172" /></a></b></p>
+<p>&nbsp;</p>
+<p><b>Philippe SAULNIER<br />
+</b>Conseiller municipal</p>
+<p>&nbsp;</p>
+                    <div class="clearfix"></div>
+        		</div>
+
+                    <script src="//maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&language=fr&key=AIzaSyAzqLdpFdERskwZp9VPCbkn7JqFCRwjJEA"></script>
+    <script src="https://www.prefailles.fr/wp-content/plugins/creasit-plan-interactif/js/MarkerClusterer.js"></script>
+            	</article>
+            <div class="addthis-bloc">
+                <p>Partager la page :</p>
+                
+        <div class="partage">
+            <ul class="liste-reseaux">
+                <li>
+                    <a class="rs-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.prefailles.fr/vos-15-elus-locaux/" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;"
+                       title="Partager sur Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                             viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-facebook-1"
+                             title="Facebook" alt="Facebook" class="at-icon at-icon-facebook"><title
+                                    id="at-svg-facebook-1">Facebook</title>
+                            <g>
+                                <path d="M22 5.16c-.406-.054-1.806-.16-3.43-.16-3.4 0-5.733 1.825-5.733 5.17v2.882H9v3.913h3.837V27h4.604V16.965h3.823l.587-3.913h-4.41v-2.5c0-1.123.347-1.903 2.198-1.903H22V5.16z"
+                                      fill-rule="evenodd"></path>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="rs-twitter" href="https://twitter.com/share?url=https://www.prefailles.fr/vos-15-elus-locaux/&text=Vos 15 élus locaux" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;"
+                       title="Partager sur Twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                             viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-twitter-2"
+                             title="Twitter" alt="Twitter" class="at-icon at-icon-twitter"><title
+                                    id="at-svg-twitter-2">Twitter</title>
+                            <g>
+                                <path d="M27.996 10.116c-.81.36-1.68.602-2.592.71a4.526 4.526 0 0 0 1.984-2.496 9.037 9.037 0 0 1-2.866 1.095 4.513 4.513 0 0 0-7.69 4.116 12.81 12.81 0 0 1-9.3-4.715 4.49 4.49 0 0 0-.612 2.27 4.51 4.51 0 0 0 2.008 3.755 4.495 4.495 0 0 1-2.044-.564v.057a4.515 4.515 0 0 0 3.62 4.425 4.52 4.52 0 0 1-2.04.077 4.517 4.517 0 0 0 4.217 3.134 9.055 9.055 0 0 1-5.604 1.93A9.18 9.18 0 0 1 6 23.85a12.773 12.773 0 0 0 6.918 2.027c8.3 0 12.84-6.876 12.84-12.84 0-.195-.005-.39-.014-.583a9.172 9.172 0 0 0 2.252-2.336"
+                                      fill-rule="evenodd"></path>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="rs-mail" href="mailto:?subject=Vos 15 élus locaux - Préfailles&body=https://www.prefailles.fr/vos-15-elus-locaux/" title="Envoyer par mail">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11.7px" height="8px"
+                             viewBox="0 0 11.7 8" style="overflow:scroll;enable-background:new 0 0 	11.7 8;"
+                             xml:space="preserve">
+					<path id="mail_1_"
+                          d="M7.8,4.2l3.9-3.7v7.1L7.8,4.2z M11.2,0H0.5l5.4,5.1L11.2,0z M0,0.4v7.1l3.9-3.4L0,0.4z 	M5.8,6L4.4,4.6L0.5,8 h10.7L7.3,4.6L5.8,6z"></path>
+					</svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="rs-imprimer" href="javascript:window.print()" title="Imprimer">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                             viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-print-4"
+                             title="Imprimer" alt="Imprimer" class="at-icon at-icon-print"><title
+                                    id="at-svg-print-4">Imprimer</title>
+                            <g>
+                                <path d="M24.67 10.62h-2.86V7.49H10.82v3.12H7.95c-.5 0-.9.4-.9.9v7.66h3.77v1.31L15 24.66h6.81v-5.44h3.77v-7.7c-.01-.5-.41-.9-.91-.9zM11.88 8.56h8.86v2.06h-8.86V8.56zm10.98 9.18h-1.05v-2.1h-1.06v7.96H16.4c-1.58 0-.82-3.74-.82-3.74s-3.65.89-3.69-.78v-3.43h-1.06v2.06H9.77v-3.58h13.09v3.61zm.75-4.91c-.4 0-.72-.32-.72-.72s.32-.72.72-.72c.4 0 .72.32.72.72s-.32.72-.72.72zm-4.12 2.96h-6.1v1.06h6.1v-1.06zm-6.11 3.15h6.1v-1.06h-6.1v1.06z"></path>
+                            </g>
+                        </svg>
+
+                    </a>
+                </li>
+            </ul>
+        </div>
+                </div>
+        </div>
+    	
+    	<div id="secondary"  role="complementary">
+	<section>
+		 		</section>
+</div></div>
+</div><!--end #wrapper -->
+<div class="center clearfix">
+	<footer class="site-footer">
+		<div class="footer-top clearfix">
+			<div class="decouvrir">
+								<a class="lien-decouvrir" href="https://www.prefailles.fr/plan-local-durbanisme/" title="" style="background-image:url('https://www.prefailles.fr/medias/2016/01/plu.jpg');">
+					<div class="bloc-decouvrir">
+						<span class="texte-decouvrir">Plan local d'urbanisme</span>
+						<span class="btn-decouvrir">Découvrir</span>
+					</div>
+				</a>
+			</div>
+			<div class="en-1-clic">
+				<h2 class="titre-bloc">En 1 clic</h2>
+				<ul class="liste-1-clic">
+					<li><a class="travaux" href="https://www.prefailles.fr/les-travaux-en-cours/"><span class="picto"><svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 11.3 10.6" style="enable-background:new 0 0 11.3 10.6;" xml:space="preserve"><path class="st0" d="M5.7,6.5c1.4,0,2.6-0.5,2.7-1.1C8.1,4.9,7.9,4.2,7.7,3.6c-0.2,0.5-1,0.8-2,0.8S3.8,4,3.7,3.6 C3.4,4.2,3.2,4.9,3,5.4C3.1,6.1,4.3,6.5,5.7,6.5z M5.7,2.6c0.7,0,1.3-0.2,1.5-0.5C6.9,1.4,6.7,0.8,6.5,0.4C6.4,0.1,6,0,5.7,0 C5.3,0,4.9,0.1,4.8,0.4c-0.1,0.4-0.3,1-0.6,1.7C4.4,2.4,5,2.6,5.7,2.6z M10.9,7.1L8.6,6.2L8.9,7c0,0.8-1.5,1.4-3.2,1.4 S2.5,7.7,2.4,7l0.3-0.7L0.5,7.1c-0.6,0.3-0.6,0.7-0.1,1l4.2,2.2c0.6,0.3,1.6,0.3,2.1,0l4.2-2.2C11.5,7.8,11.5,7.4,10.9,7.1z"/></svg></span><span class="texte">Travaux en cours</span></a></li>
+					<li><a class="urbanisme" href="https://www.prefailles.fr/listes/urbanisme/"><span class="picto"><svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 11.3 9.9" style="enable-background:new 0 0 11.3 9.9;" xml:space="preserve"><polygon class="st0" points="9.2,3.1 9.2,0 7.8,0 7.8,1.9 5.7,0 0,5 1.4,5 1.4,9.9 5,9.9 5,7.1 6.4,7.1 6.4,9.9 9.9,9.9 9.9,5 11.3,5 "/></svg></span><span class="texte">Urbanisme</span></a></li>
+					<li><a class="menus" href="https://www.prefailles.fr/le-restaurant-scolaire/"><span class="picto"><svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 8.6 13" style="enable-background:new 0 0 8.6 13;" xml:space="preserve"><path class="st0" d="M8.6,6.2c0,0.1,0,0.1,0,0.2v0.2c0,0.5-0.4,0.9-0.9,0.9H6.9v4.9c0,0.3-0.3,0.6-0.7,0.6c-0.4,0-0.7-0.3-0.7-0.6 V7.5H4.4c-0.3,0-0.6-0.1-0.7-0.4C3.6,7.1,3.5,7,3.5,6.8c0-0.1,0-0.2,0-0.3V1.8c0-0.1,0-0.1,0-0.2V1.1c0-0.3,0.2-0.6,0.4-0.6 c0.2,0,0.3,0.2,0.4,0.4c0,0,0,0,0,0v4.9c0,0.1,0.3,0.3,0.7,0.3V0.8c0-0.3,0.2-0.6,0.4-0.6c0.2,0,0.4,0.3,0.4,0.6v5.5 c0.1,0,0.2,0,0.4,0c0.1,0,0.2,0,0.3,0c0,0,0-0.1,0-0.1V0.6C6.3,0.3,6.5,0,6.7,0c0.2,0,0.4,0.3,0.4,0.6v5.5c0,0,0,0,0,0 C7.4,6.1,7.7,6,7.8,5.9V1c0-0.3,0.2-0.6,0.4-0.6c0.2,0,0.4,0.3,0.4,0.6V6.2z M0.7,1.6c-1.4,2.9-0.2,11.1-0.2,11.1h2V0.9 C2.4,0.9,2-1.3,0.7,1.6z"/></svg></span><span class="texte">Menus scolaires</span></a></li>
+					<li><a class="voile" href="https://www.prefailles.fr/lecole-de-voile/"><span class="picto"><svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 12.8 12.3" style="enable-background:new 0 0 12.8 12.3;" xml:space="preserve"><path class="st0" d="M1.1,0c0,0,10.4,1.1,8.7,9.8c-5-0.5-5.3-0.6-5.3-0.6S4,3.8,1.1,0z M12.8,9.8c-1.9,0.6-11.4,0.3-11.4,0.3L0,10.8 C11,11.8,12.3,10.5,12.8,9.8z M1.4,11.1c-0.3,0-0.6,0.2-0.6,0.6s0.2,0.6,0.6,0.6C1.7,12.3,2,12,2,11.7S1.7,11.1,1.4,11.1z M10.1,11.1c-0.3,0-0.6,0.2-0.6,0.6s0.2,0.6,0.6,0.6c0.3,0,0.6-0.2,0.6-0.6S10.4,11.1,10.1,11.1z"/></svg></span><span class="texte">école de voile</span></a></li>
+					<li><a class="assos" href="https://www.prefailles.fr/listes/liste-des-associations/"><span class="picto"><svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13.8 8.8" style="enable-background:new 0 0 13.8 8.8;" xml:space="preserve"><path class="st0" d="M9.2,3.5c0,0-0.1,0.3-0.1,0.3c0,0-0.1,0.1-0.1,0.1C9,3.9,9.2,4,9.2,4l0.7,0.2l0,0.3c-0.1,0-0.3,0.2-0.3,0.2 c0,0.1-0.1,0.1-0.1,0.2c0.6,0.3,1,0.6,1,1.1c0,0.1,0.4,1.4,0.4,1.8h2.9c0,0-0.1-1.8-0.1-1.8c0,0-0.2-0.4-0.4-0.5 c-0.3,0-0.6-0.1-0.8-0.2c-0.1-0.1-0.4-0.2-0.5-0.2c-0.1,0-0.2-0.2-0.2-0.3c0-0.1-0.3-0.2-0.3-0.2l0-0.3L12.2,4c0,0,0.2-0.1,0.2-0.1 c0,0-0.1-0.1-0.1-0.2c0,0-0.1-0.3-0.1-0.3s0.2,0.3,0.4,0.3c0,0-0.2-0.4-0.3-0.7c-0.1-0.2-0.1-0.6-0.1-0.7c0,0-0.1-1.1-0.2-1.2 c-0.1-0.2-0.2-0.4-0.4-0.5c-0.2-0.1-0.5-0.3-0.8-0.3c0,0,0,0,0,0c0,0,0,0,0,0c-0.4,0-0.7,0.2-0.8,0.3C9.7,0.8,9.6,1,9.5,1.2 C9.4,1.4,9.3,2.4,9.3,2.4c0,0,0,0.4-0.1,0.7C9.1,3.4,8.8,3.8,8.8,3.8C9,3.7,9.2,3.5,9.2,3.5z M3.1,6.3L3.1,6.3L3.1,6.3 c0.2-0.9,1.2-1.2,1.7-1.5c0,0,0,0,0,0C4.5,4.7,4.3,4.6,4.2,4.6C4.2,4.5,4.1,4,4.1,4s0.4-0.3,0.5-1c0,0,0.2,0.1,0.2-0.3 c0-0.3,0.1-0.4-0.1-0.5c0,0,0-0.2,0-0.4c0-0.3,0.1-0.7-0.4-1c-0.1,0-0.4-0.2-0.4-0.2C3.7,0.4,3.5,0.4,3.5,0.4l0,0.1c0,0,0,0,0,0 c0,0-0.1-0.2,0-0.2c0-0.1,0-0.1,0-0.1C3.2,0.3,3.1,0.6,3.1,0.6l0-0.2c0,0,0,0.1-0.6,0.4C2,1.1,2.1,1.6,2.1,1.8c0,0.2,0,0.3,0,0.3 C1.9,2.3,2,2.4,2,2.7c0,0.4,0.2,0.4,0.2,0.4C2.4,3.6,2.7,4,2.7,4S2.6,4.5,2.5,4.6c-0.1,0-0.3,0.2-0.8,0.4c-0.7,0.3-0.5,0.1-1,0.4 C-0.2,5.8,0,7.6,0,7.6h2.8L3.1,6.3z M10.7,8.8c0-0.5-0.6-2.7-0.6-2.7c0-0.3-0.4-0.7-1.3-0.9C8.4,5.1,8,4.8,8,4.8C8,4.8,8,4.5,8,4.5 l-0.3,0c0,0,0-0.4,0-0.4C8,4,8,3.3,8,3.3c0.2,0.1,0.3-0.4,0.3-0.4c0.2-0.7-0.1-0.7-0.1-0.7c0.1-0.5,0-1.3,0-1.3C8-0.4,5.6,0,5.9,0.4 C5.1,0.3,5.3,1.9,5.3,1.9l0.2,0.4C5.2,2.5,5.4,2.8,5.4,3c0,0.4,0.3,0.3,0.3,0.3C5.7,4,6,4.1,6,4.1c0.1,0.4,0,0.3,0,0.3l-0.3,0 c0,0.1,0,0.3,0,0.3C5.4,4.9,5.3,5,4.9,5.2C4.3,5.4,3.6,5.8,3.4,6.3C3.3,6.8,2.9,8.8,2.9,8.8H10.7L10.7,8.8z"/></svg></span><span class="texte">Associations</span></a></li>
+					<li><a class="entreprises" href="https://www.prefailles.fr/listes/les-commercants-artisans-et-professions-liberales/"><span class="picto"><svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 11.2 9.5" style="enable-background:new 0 0 11.2 9.5;" xml:space="preserve"><path class="st0" d="M5.1,5h1v1.1h5.1c0,0-0.1-2.5-0.1-3.3c0-0.7-0.3-1.2-1.1-1.2H8.2C7.9,1.2,7.6,0.6,7.5,0.4C7.3,0.1,7.3,0,6.8,0 H4.4C3.9,0,3.9,0.1,3.7,0.4C3.6,0.6,3.3,1.2,3,1.7H1.2c-0.8,0-1.1,0.5-1.1,1.2C0.1,3.6,0,6.2,0,6.2h5.1V5z M4.3,1.1 c0.1-0.2,0.2-0.3,0.5-0.3h1.7c0.3,0,0.3,0,0.5,0.3c0,0.1,0.2,0.3,0.3,0.6H4C4.1,1.4,4.2,1.2,4.3,1.1z M6.1,7.8h-1V6.7H0.3 c0,0,0.1,1,0.1,1.9c0,0.4,0.1,0.9,1,0.9h8.4c0.9,0,1-0.6,1-0.9c0-0.9,0.1-1.9,0.1-1.9H6.1V7.8z"/></svg></span><span class="texte">Entreprises</span></a></li>
+				</ul>
+			</div>
+			<div class="ma-mairie">
+				<div class="entete-ma-mairie">
+					<h2 class="titre-bloc">Ma mairie <br>en ligne</h2>
+					<span class="texte-mairie">Connaître vos droits <br>effectuer vos démarches</span>
+				</div>
+				<script>
+                    function Listederoulante() {
+                      i = document.Choix.Liste.selectedIndex;
+                      if (i == 0) return;
+                        url = document.Choix.Liste.options[i].value;
+                        parent.location.href = url;
+                    }
+                </script>
+                <div class="div-selection-demarche">
+	                <div class="choix-demarche">
+	                    <form name="Choix" method="post">
+	                    <select name="Liste">
+		                    <option selected value="#">Sélectionnez une catégorie</option>
+		                    <option value="https://www.prefailles.fr/services-publics/droits-et-demarches-pour-les-particuliers/?xml=N19810">Papiers-Citoyenneté</option>
+		                    <option value="https://www.prefailles.fr/services-publics/droits-et-demarches-pour-les-particuliers/?xml=N19805">Famille</option>
+		                    <option value="https://www.prefailles.fr/services-publics/droits-et-demarches-pour-les-particuliers/?xml=N19811">Social-Santé</option>
+		                    <option value="https://www.prefailles.fr/services-publics/droits-et-demarches-pour-les-particuliers/?xml=N19806">Travail</option>
+		                    <option value="https://www.prefailles.fr/services-publics/droits-et-demarches-pour-les-particuliers/?xml=N19808">Logement</option>
+		                    <option value="https://www.prefailles.fr/services-publics/droits-et-demarches-pour-les-particuliers/?xml=N19812">Transports</option>
+		                    <option value="https://www.prefailles.fr/services-publics/droits-et-demarches-pour-les-particuliers/?xml=N19803">Argent</option>
+		                    <option value="https://www.prefailles.fr/services-publics/droits-et-demarches-pour-les-particuliers/?xml=N19807">Justice</option>
+		                    <option value="https://www.prefailles.fr/services-publics/droits-et-demarches-pour-les-particuliers/?xml=N19804">Étranger</option>
+		                    <option value="https://www.prefailles.fr/services-publics/droits-et-demarches-pour-les-particuliers/?xml=N19809">Loisirs</option>
+	                    </select>
+	                    </form>
+	                </div>
+	                <button onClick="Listederoulante()">OK</button>
+                </div>
+                <div class="clearfix"></div>
+                <a class="voir-demarches" href="https://www.prefailles.fr/services-publics/guichet-virtuel/" title="">> Voir le guide complet</a>
+			</div>
+		</div>
+		    				<div class="footer-bottom clearfix">
+			<div class="contact-footer">
+				<img src="https://www.prefailles.fr/wp-content/themes/prefailles/images/blason.png" alt="Blason de Préfailles" width="132" height="156" title="Blason de Préfailles" />
+								<p class="nom">Mairie de Préfailles</p>
+				<p>17 Grande Rue</p>
+				<p><span>44770</span> <span>Préfailles</span></p>
+				<p class="tel"><span>Tél : </span>02 40 21 60 37</p>
+				<p><span>Fax : </span>02 40 64 55 15</p>
+				<a class="lien-contact" href="https://www.prefailles.fr/systeme/nous-contacter/" title="Nous contacter">Nous écrire</a>
+			</div>
+			<div class="kiosque">
+				                        <div class="pdf">
+                                                        <a href="https://www.prefailles.fr/medias/2023/06/BULLETIN-ETE-PREFAILLES-2023-complet.pdf" target="_blank" class="min-publi">
+                                <img src="https://www.prefailles.fr/medias/miniature-pdf/miniature-bulletin-ete-prefailles-2023-complet-111x158.jpg" alt="Bulletin municipal d'été 2023">
+                            </a>
+                        </div>
+                                            <div class="infos-pdf">
+                                                            <p class="titre-kiosque">Bulletin municipal d'été 2023</p>
+                                                    </div>
+                                        
+                                            <a href="https://www.prefailles.fr/medias/2023/06/BULLETIN-ETE-PREFAILLES-2023-complet.pdf" target="_blank" class="consulter">Consulter</a>
+                                    <div class="clearfix"></div>
+                <a href="https://www.prefailles.fr/systeme/nos-documents/" class="documents">> Voir toutes nos publications</a>
+			</div>
+			<div class="horaires">
+				<div class="bg-horaires">
+										<p class="titre-horaires">Ouverture au public</p>
+					<p>Du lundi au samedi : 9h-12h</p>
+				</div>
+			</div>
+		</div>
+		<div class="footer-links clearfix">
+			<div class="labels">
+				<a href="https://www.pavillonbleu.org/laureats-communes-2018/44-prefailles.html" target="_blank" title=""><img src="https://www.prefailles.fr/wp-content/themes/prefailles/images/pavillon-bleu.png" alt="Pavillon bleu" width="75" height="54" title="Pavillon Bleu" /></a>
+				<a href="https://www.communes-touristiques.net/anmscct/membres/" target="_blank" title=""><img src="https://www.prefailles.fr/wp-content/themes/prefailles/images/station-classee.png" alt="Station Classée" width="49" height="54" title="Station Classée" /></a>
+			</div>
+			<div class="liens-menu">
+				<div class="menu-bottom clearfix">
+					<div class="menu-menu-footer-container"><ul id="menu-menu-footer" class="footer-menu"><li id="menu-item-3087" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3087 item-1"><a title="Accueil" href="/">Accueil</a></li>
+<li id="menu-item-3088" class="imprimer menu-item menu-item-type-custom menu-item-object-custom menu-item-3088 item-2"><a href="javascript:window.print()" title="Imprimer">Imprimer</a></li>
+<li id="menu-item-11011" class="menu-item menu-item-type-post_type menu-item-object-page-systeme menu-item-11011 item-3"><a title="Accessibilité : partiellement conforme" href="https://www.prefailles.fr/systeme/declaration-daccessibilite/">Accessibilité : partiellement conforme</a></li>
+<li id="menu-item-3085" class="menu-item menu-item-type-post_type menu-item-object-page-systeme menu-item-3085 item-4"><a title="Plan du site" href="https://www.prefailles.fr/systeme/plan-du-site/">Plan du site</a></li>
+<li id="menu-item-3084" class="menu-item menu-item-type-post_type menu-item-object-page-systeme menu-item-3084 item-5"><a title="Mentions légales" href="https://www.prefailles.fr/systeme/mentions-legales/">Mentions légales</a></li>
+<li id="menu-item-9616" class="menu-item menu-item-type-post_type menu-item-object-page-systeme menu-item-9616 item-6"><a title="Confidentialité" href="https://www.prefailles.fr/systeme/politique-de-confidentialite/">Confidentialité</a></li>
+<li id="menu-item-3086" class="agence-creasit menu-item menu-item-type-custom menu-item-object-custom menu-item-3086 item-7"><a href="http://www.creasit.fr/" title="Agence Creasit" target="_blank">© Creasit</a></li>
+</ul></div>				</div>
+				<a class="acces-prive" href="https://www.prefailles.fr/acces-prive/" title=""><span></span>Accès privé</a>
+			</div>
+		</div>
+	</footer>
+</div>
+	<script type="application/javascript">
+				jQuery(document).bind("gform_confirmation_loaded", function(){
+				    jQuery(".entry-content p.champs-obligatoires").remove();
+				});
+		</script><script type='text/javascript' src='https://www.prefailles.fr/wp-content/plugins/co-marquage-service-public/vendor/leaflet/leaflet.js' id='leaflet-js'></script>
+<script type='text/javascript' src='https://www.prefailles.fr/wp-content/plugins/co-marquage-service-public/assets/js/comarquage.js' id='comarquage-js'></script>
+<script type='text/javascript' src='https://www.prefailles.fr/wp-content/plugins/creasit-plan-interactif/js/infobubble.js' id='infobulle-js'></script>
+<script type='text/javascript' src='https://www.prefailles.fr/wp-includes/js/jquery/ui/core.min.js' id='jquery-ui-core-js'></script>
+<script type='text/javascript' src='https://www.prefailles.fr/wp-includes/js/jquery/ui/menu.min.js' id='jquery-ui-menu-js'></script>
+<script type='text/javascript' src='https://www.prefailles.fr/wp-includes/js/dist/vendor/regenerator-runtime.min.js' id='regenerator-runtime-js'></script>
+<script type='text/javascript' src='https://www.prefailles.fr/wp-includes/js/dist/vendor/wp-polyfill.min.js' id='wp-polyfill-js'></script>
+<script type='text/javascript' src='https://www.prefailles.fr/wp-includes/js/dist/dom-ready.min.js' id='wp-dom-ready-js'></script>
+<script type='text/javascript' src='https://www.prefailles.fr/wp-includes/js/dist/hooks.min.js' id='wp-hooks-js'></script>
+<script type='text/javascript' src='https://www.prefailles.fr/wp-includes/js/dist/i18n.min.js' id='wp-i18n-js'></script>
+<script type='text/javascript' id='wp-i18n-js-after'>
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script type='text/javascript' id='wp-a11y-js-translations'>
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2022-10-16 13:15:30+0000","generator":"GlotPress\/4.0.0-alpha.3","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n > 1;","lang":"fr"},"Notifications":["Notifications"]}},"comment":{"reference":"wp-includes\/js\/dist\/a11y.js"}} );
+</script>
+<script type='text/javascript' src='https://www.prefailles.fr/wp-includes/js/dist/a11y.min.js' id='wp-a11y-js'></script>
+<script type='text/javascript' id='jquery-ui-autocomplete-js-extra'>
+/* <![CDATA[ */
+var uiAutocompleteL10n = {"noResults":"Aucun r\u00e9sultat.","oneResult":"Un r\u00e9sultat trouv\u00e9. Utilisez les fl\u00e8ches haut et bas du clavier pour les parcourir.","manyResults":"%d r\u00e9sultats trouv\u00e9s. Utilisez les fl\u00e8ches haut et bas du clavier pour les parcourir.","itemSelected":"\u00c9l\u00e9ment s\u00e9lectionn\u00e9."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.prefailles.fr/wp-includes/js/jquery/ui/autocomplete.min.js' id='jquery-ui-autocomplete-js'></script>
+<script type='text/javascript' src='https://www.prefailles.fr/wp-content/themes/noyau/assets/js/scripts-noyau.js' id='scripts-noyau-js'></script>
+<script type='text/javascript' src='https://www.prefailles.fr/wp-content/themes/noyau/assets/js/class_externe_svg.js' id='addClassExterne-js'></script>
+<script type='text/javascript' src='https://www.prefailles.fr/wp-content/themes/noyau/assets/js/jquery.inputmask.js' id='mask-js'></script>
+<script type='text/javascript' src='https://www.prefailles.fr/wp-content/themes/noyau/assets/js/ReaderPDF/liseuse.js' id='liseuse-js'></script>
+<script type='text/javascript' src='https://www.prefailles.fr/wp-content/themes/noyau/assets/js/ReaderPDF/dflip.min.js' id='dflip-js'></script>
+<script type='text/javascript' src='https://www.prefailles.fr/wp-content/themes/prefailles/js/jquery.carouFredSel-6.2.1-packed.js' id='carouFredSel-js'></script>
+<script type='text/javascript' src='https://www.prefailles.fr/wp-content/themes/prefailles/js/scripts.js' id='scripts-js'></script>
+<script type='text/javascript' src='https://www.prefailles.fr/wp-content/themes/prefailles/js/jquery.duotone.min.js' id='bichromie-js'></script>
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['requireCookieConsent']);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//www.prefailles.fr/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//www.prefailles.fr/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code --></div><!-- end .global-wrapper -->
+</body>
+</html>
