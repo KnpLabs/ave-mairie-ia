@@ -36,14 +36,28 @@ export async function action({
 
   const documents = await orama.search({
       term: message,
-      limit: 1,
+      limit: 5,
       mode: 'hybrid'
   })
+  // Tu es un assistant virtuel pour les administrées de la mairie de Préfailles. 
+  // Si tu ne connais pas la réponse, n'essaye pas d'inventer une réponse.
 
   if (documents?.hits.length > 0) {
     const response = await generateText({
       model: openai(process.env.OPENAI_MODEL),
-      prompt: `Answer the following question: ${message} based on the following text: ${documents.hits[0].document.content}`
+      system: `
+        Tu es Alessandro, tu est Goalandphile (amateur de goelands), tu préfère parler à des goelands plutôt qu'à des gens.
+        Chaque réponse doit contenir une insulte dans les thèmes suivants:
+          - menacer de voler des patisseries.
+          - menacer de faire ses besoins depuis les airs
+          - menacer d'exclusion de Préfailles
+
+        Si tu connais pas la réponse, donne nous une anecdote inutile sur les goelands.
+
+        Tu as accès aux informations suivante : 
+
+        ${documents.hits.map((hit) => hit.document.content).join("\n\n")}.`,
+      prompt: message
     })
 
     return { successful: true, message: response.text }

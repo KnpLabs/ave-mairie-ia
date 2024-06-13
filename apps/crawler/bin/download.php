@@ -66,6 +66,10 @@ $crawler = Crawler::create()
         ): void {}
 
         private function write(UriInterface $uri, Content $content): void{
+            if ('' === $content->content) {
+                return;
+            }
+
             if (false === $this->first) {
                 file_put_contents(
                     __DIR__ . '/../index-dump.json',
