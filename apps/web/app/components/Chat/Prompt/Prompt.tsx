@@ -66,6 +66,7 @@ const Prompt = ({ addMessage }: { addMessage: (message: Message) => void }) => {
             <option value="default">Default</option>
             <option value="goeland">Goeland</option>
             <option value="johnny">Johnny</option>
+            <option value="noParis">No Paris</option>
           </select>
         </div>
         <div className={ styles.bar }>

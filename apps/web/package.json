@@ -7,11 +7,14 @@
     "build": "remix vite:build",
     "dev": "remix vite:dev --host",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
-    "start": "remix-serve ./build/server/index.js",
+    "start": "netlify serve",
     "typecheck": "tsc"
   },
   "dependencies": {
     "@ai-sdk/openai": "^0.0.27",
+    "@netlify/edge-functions": "^2.8.1",
+    "@netlify/remix-edge-adapter": "^3.3.0",
+    "@netlify/remix-runtime": "^2.3.0",
     "@oramacloud/client": "^1.1.6",
     "@remix-run/node": "^2.9.2",
     "@remix-run/react": "^2.9.2",
