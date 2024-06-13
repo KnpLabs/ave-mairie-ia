@@ -17,7 +17,7 @@ const Prompt = ({ addMessage }: { addMessage: (message: Message) => void }) => {
         text: fetcher.formData.get('message') as string,
       })
 
-      $form.current?.reset()
+      $form.current.querySelector('input[name="message"]').value = ''
 
       return;
     }
@@ -59,11 +59,21 @@ const Prompt = ({ addMessage }: { addMessage: (message: Message) => void }) => {
   }, [fetcher.state])
 
   return (
-    <fetcher.Form className={ styles.wrapper } method="post" ref={ $form }>
-      <audio ref={ $audio } volume={ 0 } src="/holy.mp3"></audio>
-      <input name="message" type="text" placeholder="Type a message" />
-      <button type="submit">Invoque</button>
-    </fetcher.Form>
+    <>
+      <fetcher.Form className={ styles.wrapper } method="post" ref={ $form }>
+        <div className={ styles.profile }>
+          <select name="profile">
+            <option value="default">Default</option>
+            <option value="goeland">Goeland</option>
+          </select>
+        </div>
+        <div className={ styles.bar }>
+          <input name="message" type="text" placeholder="Type a message" />
+          <button type="submit">Invoque</button>
+        </div>
+      </fetcher.Form>
+      <audio ref={ $audio } volume={ 0 } src="/holy.mp3" />
+    </>
   );
 }
 

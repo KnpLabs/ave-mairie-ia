@@ -3,7 +3,7 @@
     flex-direction: column;
     gap: 25px;
     width: 90%;
-    max-width: 600px;
+    max-width: 700px;
 }
 
 .messages {
@@ -20,6 +20,8 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
+    animation: appear 3s normal forwards ease-in-out;
+    opacity: 0;
 }
 
 .messages.active::after {
@@ -29,12 +31,21 @@
 .messages.loading::after {
     visibility: visible;
     opacity: 0.6;
-    animation: Pulsate 1.5s linear infinite;
+    animation: pulsate 1.5s linear infinite;
     background-color: rgba(255, 255, 255, 0.8);
 }
 
-@keyframes Pulsate {
+@keyframes pulsate {
     from { opacity: 0.6; }
     50% { opacity: 0.4; }
     to { opacity: 0.6; }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

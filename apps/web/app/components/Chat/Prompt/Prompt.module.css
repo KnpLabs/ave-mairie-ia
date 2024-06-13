@@ -1,17 +1,52 @@
 .wrapper {
-    position: relative;
-    padding: 10px 50px 10px 20px;
-    border-radius: 999em;
-    background-color: #ffffff;
-    border: 3px solid #5E548E;
+    display: flex;
+    width: 100%;
 }
 
-.wrapper:focus-within {
+.profile {
+    position: relative;
+}
+
+.profile select {
+    flex: 0 1 auto;
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 999em 0 0 999em;
+    background-color: #ffffff;
+    border: 3px solid #5E548E;
+    border-right: none;
+    appearance: none;
+    height: 62px;
+}
+
+.profile select:focus-within {
     outline: none;
     outline: 6px solid #8e87b0;
 }
 
-.wrapper input {
+.profile::after {
+    content: "▼";
+    font-size: 0.8rem;
+    top: 22px;
+    right: 5px;
+    position: absolute;
+  }
+
+.bar {
+    flex: 1 1 auto;
+    position: relative;
+    padding: 10px 50px 10px 20px;
+    border-radius: 0 999em 999em 0;
+    background-color: #ffffff;
+    border: 3px solid #5E548E;
+}
+
+.bar:focus-within {
+    outline: none;
+    outline: 6px solid #8e87b0;
+}
+
+.bar input {
     width: 100%;
     border: none;
     background-color: transparent;
@@ -20,14 +55,14 @@
     padding: 0;
 }
 
-.wrapper input:-webkit-autofill,
-.wrapper input:-webkit-autofill:hover,
-.wrapper input:-webkit-autofill:focus,
-.wrapper input:-webkit-autofill:active{
+.bar input:-webkit-autofill,
+.bar input:-webkit-autofill:hover,
+.bar input:-webkit-autofill:focus,
+.bar input:-webkit-autofill:active{
     -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
 
-.wrapper button {
+.bar button {
     position: absolute;
     right: 10px;
     top: 10px;
@@ -41,11 +76,11 @@
     justify-content: center;
 }
 
-.wrapper button:hover {
+.bar button:hover {
     background-color: #5E548E;
     color: #ffffff;
 }
 
-.wrapper audio {
+.bar audio {
     visibility: none;
 }

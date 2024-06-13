@@ -3,7 +3,7 @@ import styles from "./route.module.css";
 import { useState } from "react";
 import Chat from "../../components/Chat";
 import { generateText } from 'ai'
-import openai from '../../lib/openai.server';
+import openai, { prompts } from '../../lib/openai.server';
 import { orama } from '../../lib/orama.server';
 import { ActionFunctionArgs } from '@remix-run/node';
 import { Message } from "../../components/Chat/type";
@@ -34,26 +34,19 @@ export async function action({
 }: ActionFunctionArgs) {
   const formData = await request.formData();
   const message = formData.get('message') as string;
+  const profile = formData.get('profile') as string;
 
   const documents = await orama.search({
       term: message,
       limit: 5,
       mode: 'hybrid'
   })
-  // Tu es un assistant virtuel pour les administrées de la mairie de Préfailles.
-  // Si tu ne connais pas la réponse, n'essaye pas d'inventer une réponse.
 
   if (documents?.hits.length > 0) {
     const response = await generateText({
       model: openai(process.env.OPENAI_MODEL),
       system: `
-        Tu es Alessandro, tu est Goalandphile (amateur de goelands), tu préfère parler à des goelands plutôt qu'à des gens.
-        Chaque réponse doit contenir une insulte dans les thèmes suivants:
-          - menacer de voler des patisseries.
-          - menacer de faire ses besoins depuis les airs
-          - menacer d'exclusion de Préfailles
-
-        Si tu connais pas la réponse, donne nous une anecdote inutile sur les goelands.
+        ${prompts[profile]}
 
         Tu as accès aux informations suivante :
 
