@@ -26,3 +26,8 @@ stop:
 .install-deps:
 	@echo "Installing dependencies..."
 	@docker-compose -f docker-compose.$(STAGE).yaml run --rm web npm install
+
+.PHONY: lint
+lint:
+	@echo "Running linter..."
+	@docker-compose -f docker-compose.$(STAGE).yaml run --rm web npm run lint
