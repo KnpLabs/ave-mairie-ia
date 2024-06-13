@@ -17,5 +17,18 @@
 .title small {
     font-size: 0.6em;
     color: #fae588;
-    vertical-align: super;
+    animation: elevate 2s normal forwards ease-in-out;
+    vertical-align: 0;
+    opacity: 0;
+}
+
+@keyframes elevate {
+    0% {
+        vertical-align: 0;
+        opacity: 0;
+    }
+    100% {
+        vertical-align: 50px;
+        opacity: 1;
+    }
 }
