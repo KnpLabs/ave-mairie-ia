@@ -11,10 +11,11 @@
     font-size: 8rem;
     font-weight: 700;
     margin-bottom: 1rem;
+    color: #231942;
 }
 
 .title small {
     font-size: 0.6em;
-    color: grey;
+    color: #fae588;
     vertical-align: super;
 }

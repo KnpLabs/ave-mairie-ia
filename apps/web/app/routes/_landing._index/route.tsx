@@ -6,6 +6,7 @@ import { generateText } from 'ai'
 import openai from '../../lib/openai.server';
 import { orama } from '../../lib/orama.server';
 import { ActionFunctionArgs } from '@remix-run/node';
+import { Message } from "../../components/Chat/type";
 
 export const meta: MetaFunction = () => {
   return [
@@ -16,7 +17,7 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   const [messages, setMessages] = useState([]);
 
-  const addMessage = (message: string) => {
+  const addMessage = (message: Message) => {
     setMessages([...messages, message])
   }
 
@@ -39,7 +40,7 @@ export async function action({
       limit: 5,
       mode: 'hybrid'
   })
-  // Tu es un assistant virtuel pour les administrées de la mairie de Préfailles. 
+  // Tu es un assistant virtuel pour les administrées de la mairie de Préfailles.
   // Si tu ne connais pas la réponse, n'essaye pas d'inventer une réponse.
 
   if (documents?.hits.length > 0) {
@@ -54,7 +55,7 @@ export async function action({
 
         Si tu connais pas la réponse, donne nous une anecdote inutile sur les goelands.
 
-        Tu as accès aux informations suivante : 
+        Tu as accès aux informations suivante :
 
         ${documents.hits.map((hit) => hit.document.content).join("\n\n")}.`,
       prompt: message

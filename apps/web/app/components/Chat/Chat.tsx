@@ -21,10 +21,10 @@ const Chat = ({ messages, addMessage }: { messages: Message[], addMessage: (mess
 
     return (
         <div className={ styles.wrapper }>
-            <Prompt addMessage={ addMessage }/>
             <div className={ `${styles.messages} ${ messages.length > 0 ? styles.active : '' } ${ isLoading ? styles.loading : '' }` }>
-                <Messages messages={ messages } />
+                { messages.length > 0 ? <Messages messages={ messages } /> : null }
             </div>
+            <Prompt addMessage={ addMessage }/>
         </div>
     )
 }

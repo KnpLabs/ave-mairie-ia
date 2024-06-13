@@ -3,11 +3,12 @@
     padding: 10px 50px 10px 20px;
     border-radius: 999em;
     background-color: #ffffff;
-    border: 2px solid #5E548E;
+    border: 3px solid #5E548E;
 }
 
 .wrapper:focus-within {
-    outline: 5px solid #BE95C4;
+    outline: none;
+    outline: 6px solid #8e87b0;
 }
 
 .wrapper input {
@@ -19,6 +20,13 @@
     padding: 0;
 }
 
+.wrapper input:-webkit-autofill,
+.wrapper input:-webkit-autofill:hover,
+.wrapper input:-webkit-autofill:focus,
+.wrapper input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
 .wrapper button {
     position: absolute;
     right: 10px;
@@ -27,13 +35,17 @@
     padding: 10px;
     height: 35px;
     border: none;
-    background-color: #5E548E;
-    color: #ffffff;
+    background-color: #f9dc5c;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .wrapper button:hover {
-    background-color: #231942;
+    background-color: #5E548E;
+    color: #ffffff;
+}
+
+.wrapper audio {
+    visibility: none;
 }
