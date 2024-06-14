@@ -4,7 +4,7 @@ import { useFetcher } from '@remix-run/react';
 import { Message, Sender } from '../type';
 import { v4 as uuidv4 } from 'uuid';
 
-const Prompt = ({ addMessage }: { addMessage: (message: Message) => void }) => {
+const Prompt = ({ addMessage, messages }: { addMessage: (message: Message) => void, messages: Message[] }) => {
   const $form = useRef<HTMLFormElement>(null)
   const $audio = useRef<HTMLFormElement>(null)
   const fetcher = useFetcher({ key: 'chat' })
@@ -72,6 +72,9 @@ const Prompt = ({ addMessage }: { addMessage: (message: Message) => void }) => {
         <div className={ styles.bar }>
           <input name="message" type="text" placeholder="Type a message" />
           <button type="submit">Invoque</button>
+        </div>
+        <div className={ styles.hidden }>
+          <textarea name="messages" defaultValue={ messages.map(({ id, text, sender }) => `${sender}: ${text}\n`) } />
         </div>
       </fetcher.Form>
       <audio ref={ $audio } volume={ 0 } src="/holy.mp3" />
