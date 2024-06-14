@@ -5,7 +5,7 @@ import { Message, Sender } from '../type';
 import { v4 as uuidv4 } from 'uuid';
 import Send from '~/components/Icons/Send';
 
-const Prompt = ({ addMessage }: { addMessage: (message: Message) => void }) => {
+const Prompt = ({ addMessage, messages }: { addMessage: (message: Message) => void, messages: Message[] }) => {
   const $form = useRef<HTMLFormElement>(null)
   const $audio = useRef<HTMLFormElement>(null)
   const fetcher = useFetcher({ key: 'chat' })
@@ -76,6 +76,9 @@ const Prompt = ({ addMessage }: { addMessage: (message: Message) => void }) => {
             <span>Invoque</span>
             <Send width={ 16 } height={ 16 } />
           </button>
+        </div>
+        <div className={ styles.hidden }>
+          <textarea name="messages" defaultValue={ messages.map(({ id, text, sender }) => `${sender}: ${text}\n`) } />
         </div>
       </fetcher.Form>
       <audio ref={ $audio } volume={ 0 } src="/holy.mp3" />

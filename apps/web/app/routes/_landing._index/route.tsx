@@ -18,7 +18,7 @@ export default function Index() {
   const [messages, setMessages] = useState([]);
 
   const addMessage = (message: Message) => {
-    setMessages([...messages, message])
+    setMessages(messages => [...messages, message])
   }
 
   return (
@@ -33,6 +33,7 @@ export async function action({
   request,
 }: ActionFunctionArgs) {
   const formData = await request.formData();
+  const messages = formData.get('messages') as string;
   const message = formData.get('message') as string;
   const profile = formData.get('profile') as string;
 
@@ -47,6 +48,10 @@ export async function action({
       model: openai(process.env.OPENAI_MODEL),
       system: `
         ${prompts[profile]}
+
+        Voici l'historique de conversation (tes réponses commencent par "system: " et celles de ton interlocuteur par "user: "):
+        ${ messages }
+        Fin de l'historique.
 
         Tu as accès aux informations suivante :
 

@@ -109,3 +109,7 @@
 .bar audio {
     visibility: none;
 }
+
+.hidden {
+    display: none;
+}
