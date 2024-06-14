@@ -1,3 +1,6 @@
+@value layout: "../../styles/variables.module.css";
+@value breakpoint-s, breakpoint-l from layout;
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -5,6 +8,7 @@
     min-height: 100vh;
     min-width: 100vw;
     background-color: #f5f5f5;
+    padding: 25px 10px;
 }
 
 .title {
@@ -12,6 +16,18 @@
     font-weight: 700;
     margin-bottom: 1rem;
     color: #231942;
+}
+
+@media (width <= breakpoint-l) {
+    .title {
+        font-size: 5rem;
+    }
+}
+
+@media (width <= breakpoint-s) {
+    .title {
+        font-size: 3rem;
+    }
 }
 
 .title small {
@@ -28,7 +44,7 @@
         opacity: 0;
     }
     100% {
-        vertical-align: 50px;
+        vertical-align: 0.5em;
         opacity: 1;
     }
 }

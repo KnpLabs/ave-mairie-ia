@@ -3,6 +3,7 @@ import styles from './Prompt.module.css'
 import { useFetcher } from '@remix-run/react';
 import { Message, Sender } from '../type';
 import { v4 as uuidv4 } from 'uuid';
+import Send from '~/components/Icons/Send';
 
 const Prompt = ({ addMessage }: { addMessage: (message: Message) => void }) => {
   const $form = useRef<HTMLFormElement>(null)
@@ -71,7 +72,10 @@ const Prompt = ({ addMessage }: { addMessage: (message: Message) => void }) => {
         </div>
         <div className={ styles.bar }>
           <input name="message" type="text" placeholder="Type a message" />
-          <button type="submit">Invoque</button>
+          <button type="submit">
+            <span>Invoque</span>
+            <Send width={ 16 } height={ 16 } />
+          </button>
         </div>
       </fetcher.Form>
       <audio ref={ $audio } volume={ 0 } src="/holy.mp3" />

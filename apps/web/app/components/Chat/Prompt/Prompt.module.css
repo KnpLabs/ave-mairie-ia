@@ -1,3 +1,6 @@
+@value layout: "../../../styles/variables.module.css";
+@value breakpoint-s from layout;
+
 .wrapper {
     display: flex;
     width: 100%;
@@ -17,6 +20,13 @@
     border-right: none;
     appearance: none;
     height: 62px;
+}
+
+@media (max-width: breakpoint-s) {
+    .profile select {
+        width: 55px;
+    }
+
 }
 
 .profile select:focus-within {
@@ -79,6 +89,21 @@
 .bar button:hover {
     background-color: #5E548E;
     color: #ffffff;
+    fill: #ffffff;
+}
+
+.bar button svg {
+    display: none;
+}
+
+@media (max-width: breakpoint-s) {
+    .bar button span {
+        display: none;
+    }
+
+    .bar button svg {
+        display: block;
+    }
 }
 
 .bar audio {
