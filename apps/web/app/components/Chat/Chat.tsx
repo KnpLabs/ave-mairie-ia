@@ -6,7 +6,7 @@ import { Message } from './type';
 import { useFetcher } from '@remix-run/react';
 
 const Chat = ({ messages, addMessage }: { messages: Message[], addMessage: (message: Message) => void }) => {
-    const [isLoading, setIsLoading] = useState(true)
+    const [isLoading, setIsLoading] = useState(false)
     const fetcher = useFetcher({ key: 'chat' })
 
     useEffect(() => {
